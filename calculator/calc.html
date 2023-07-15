@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="3"> <input class="display" type="text" id="result" disabled/></td>
+                <td> <input class="clearScreen" type="button" value="C" onClick="clearScreen()" id="btn" /></td>
+            </tr>
+            <tr id="row1">
+                <td> <input class="seven" type="button" value="7" onClick="display('7')"/></td>
+                <td> <input class="eight" type="button" value="8" onClick="display('8')"/></td>
+                <td> <input class="nine" type="button" value="9" onClick="display('9')"/></td>
+                <td> <input class="division" type="button" value="/" onClick="display('/')"/></td>
+            </tr>
+            <tr>
+                <td> <input class="four" type="button" value="4" onClick="display('4')"/></td>
+                <td> <input class="five" type="button" value="5" onClick="display('5')"/></td>
+                <td> <input class="six" type="button" value="6" onClick="display('6')"/></td>
+                <td> <input class="multiplication" type="button" value="*" onClick="display('*')"/></td>
+            </tr>
+            <tr>
+                <td> <input class="one" type="button" value="1" onClick="display('1')"/></td>
+                <td> <input class="two" type="button" value="2" onClick="display('2')"/></td>
+                <td> <input class="three" type="button" value="3" onClick="display('3')"/></td>
+                <td> <input class="subtraction" type="button" value="-" onClick="display('-')"/></td>
+            </tr>
+            <tr>
+                <td> <input class="0" type="button" value="0" onClick="display('0')"/></td>
+                <td> <input class="." type="button" value="." onClick="display('.')"/></td>
+                <td> <input class="*" type="button" value="+" onClick="display('+')"/></td>
+                <td> <input class="=" type="button" value="=" onClick="calculate()"/></td>
+            </tr>
+        </table>
+        <script src="calc.js"></script>
+    </body>
+</html>
